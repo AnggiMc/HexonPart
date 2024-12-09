@@ -1,16 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
-Route::get('/', function () {
-    return view('user.welcome');
-});
-Route::get('/user/home', function () {
-    return view('user.home');
-});
-Route::get('/auth/login', function () {
-    return view('auth.login');
-});
-Route::get('/user/order', function () {
-    return view('user.Order');
-});
+
+Route::get('/', [Controllers\WelcomeController::class, 'index']);
+Route::get('/user/Home', [Controllers\HomeController::class, 'index']);
+Route::get('/auth/Login', [Controllers\LoginController::class, 'index']);
+Route::get('/user/Order', [Controllers\OrderController::class, 'index']);
