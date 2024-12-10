@@ -15,12 +15,12 @@
                 <i class="fas fa-cube"></i>
             </div>
             <nav class="hidden md:flex space-x-4">
-                <a class="text-gray-600 hover:text-gray-800" href="#">Products</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Solutions</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Community</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Resources</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Pricing</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Contact</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/user/Home">Products</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Solutions</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Community</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Resources</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Pricing</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Contact</a>
             </nav>
             <div class="md:hidden">
                 <button id="menu-button" class="text-gray-600 focus:outline-none">
@@ -30,12 +30,12 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden">
             <nav class="flex flex-col space-y-2 px-6 py-4">
-                <a class="text-gray-600 hover:text-gray-800" href="#">Products</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Solutions</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Community</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Resources</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Pricing</a>
-                <a class="text-gray-600 hover:text-gray-800" href="#">Contact</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Products</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Solutions</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Community</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Resources</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Pricing</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/auth/Login">Contact</a>
             </nav>
         </div>
     </header>
@@ -44,8 +44,8 @@
             <p class="text-lg text-gray-600 mb-2">Halo, Selamat datang</p>
             <h1 class="text-4xl font-bold text-gray-800 mb-6">Temukan Spare part Impianmu</h1>
             <div class="space-x-4">
-                <button class="px-4 py-2 bg-gray-200 text-gray-600 rounded">Sign in</button>
-                <button class="px-4 py-2 bg-gray-400 text-white rounded">Register</button>
+                <a href="/auth/Login" class="px-4 py-2 bg-gray-200 text-gray-600 rounded">Login</a>
+                <a href="/auth/Register" class="px-4 py-2 bg-gray-400 text-white rounded" rounded">Register</a>
             </div>
         </div>
         <div class="md:w-1/2 mt-10 md:mt-0"> <img alt="Placeholder image for spare part" class="w-full h-auto" height="300" src="https://storage.googleapis.com/a1aa/image/jYkowuMF33LNH5UvcgbKsrxBpfEYsORFMacXA9YGcWa7Tb8JA.jpg" width="400" /> </div>
