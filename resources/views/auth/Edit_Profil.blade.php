@@ -6,8 +6,9 @@
 </head>
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen relative">
-    <a class="absolute top-4 left-4 text-black text-lg" href="#">
-        <i class="fas fa-arrow-left"></i> Kembali
+    <a href="/" class="absolute top-4 left-4 flex items-center text-black text-lg">
+        <i class="fas fa-arrow-left mr-2"></i>
+        <span>Kembali</span>
     </a>
     <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
         <div class="flex justify-center mb-6">
