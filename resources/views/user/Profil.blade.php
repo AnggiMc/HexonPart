@@ -58,9 +58,9 @@
             <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" readonly="" type="text" value="" />
         </div>
         <div class="flex justify-center space-x-4 mt-4">
-            <button class="bg-gray-500 text-white px-4 py-2 rounded-lg">
+            <a href="/auth/Edit_Password" class="bg-gray-500 text-white px-4 py-2 rounded-lg">
                 Ubah Password
-            </button>
+            </a>
             <button class="bg-gray-500 text-white px-4 py-2 rounded-lg">
                 Logout
             </button>

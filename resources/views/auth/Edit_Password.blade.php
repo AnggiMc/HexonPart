@@ -9,12 +9,10 @@
 </head>
 
 <body class="bg-white flex flex-col items-center justify-center min-h-screen">
-    <div class="absolute top-4 left-4">
-        <a href="/" class="text-black flex items-center">
-            <i class="fas fa-arrow-left mr-2"></i>
-            Kembali
-        </a>
-    </div>
+    <a href="/" class="absolute top-4 left-4 flex items-center text-black text-lg">
+        <i class="fas fa-arrow-left mr-2"></i>
+        <span>Kembali</span>
+    </a>
     <div class="w-full max-w-xs md:max-w-md lg:max-w-lg">
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">

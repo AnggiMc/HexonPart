@@ -14,9 +14,7 @@
             opacity: 0;
             visibility: hidden;
             transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
-            /* Transition untuk opacity dan visibility */
             position: absolute;
-            /* Pastikan gambar bertumpuk */
             top: 0;
             left: 0;
             width: 100%;
@@ -33,7 +31,7 @@
 
 <body class="bg-white text-center">
     <!-- Search Bar -->
-    <div class="flex justify-center items-center mt-10 space-x-2 w-full">
+    <div class="flex justify-center items-center mt-10 space-x-2 w-full select-none">
         <!-- Input and Search Button in the Center -->
         <div class="flex justify-center items-center space-x-2 w-full max-w-5xl mx-auto">
             <input class="border border-black rounded-full px-4 py-2 w-3/4" placeholder="Cari Barang" type="text" />
@@ -84,13 +82,10 @@
                 <i class="fas fa-chevron-right">
                 </i>
             </button>
-            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
-                <span class="inline-block w-3 h-3 bg-black rounded-full mx-1">
-                </span>
-                <span class="inline-block w-3 h-3 bg-black rounded-full mx-1">
-                </span>
-                <span class="inline-block w-3 h-3 bg-black rounded-full mx-1">
-                </span>
+            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 flex">
+                <span class="carousel-indicator w-3 h-3 bg-black rounded-full mx-1 sm:cursor-pointer select-none" data-slide="0"></span>
+                <span class="carousel-indicator w-3 h-3 bg-black rounded-full mx-1 sm:cursor-pointer select-none"></span>
+                <span class="carousel-indicator w-3 h-3 bg-black rounded-full mx-1 sm:cursor-pointer select-none" data-slide="2"></span>
             </div>
         </div>
     </div>
@@ -182,10 +177,14 @@
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-item');
+        const indicators = document.querySelectorAll('.carousel-indicator');
 
         function showSlide(index) {
             slides.forEach((slide, i) => {
                 slide.classList.toggle('active', i === index);
+            });
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
             });
         }
 
@@ -198,6 +197,14 @@
             currentSlide = (currentSlide - 1 + slides.length) % slides.length;
             showSlide(currentSlide);
         }
+
+        indicators.forEach((indicator) => {
+            indicator.addEventListener('click', (e) => {
+                const slideIndex = parseInt(e.target.getAttribute('data-slide'));
+                currentSlide = slideIndex;
+                showSlide(currentSlide);
+            });
+        });
 
         // Auto slide every 8 seconds
         setInterval(nextSlide, 8000);
