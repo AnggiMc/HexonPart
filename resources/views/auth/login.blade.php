@@ -10,7 +10,7 @@
 
 <body class="flex items-center justify-center min-h-screen bg-gray-100">
     <div class="absolute top-4 left-4">
-        <a href="#" class="flex items-center text-black">
+        <a href="/" class="flex items-center text-black">
             <i class="fas fa-arrow-left mr-2"></i>
             <span>Kembali</span>
         </a>
@@ -31,7 +31,7 @@
             </div>
             <div class="flex items-center justify-between">
                 <button class="bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                    Sign in
+                    Login
                 </button>
             </div>
             <div class="mt-4">
