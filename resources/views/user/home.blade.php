@@ -3,11 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>
-        HexonPart
-    </title>
-    <script src="https://cdn.tailwindcss.com">
-    </script>
+    <title>HexonPart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <style>
         .carousel-item {
@@ -36,8 +33,7 @@
         <div class="flex justify-center items-center space-x-2 w-full max-w-5xl mx-auto">
             <input class="border border-black rounded-full px-4 py-2 w-3/4" placeholder="Cari Barang" type="text" />
             <button class="border border-black rounded-full px-4 py-2">
-                <i class="fas fa-search">
-                </i>
+                <i class="fas fa-search"></i>
             </button>
             <!-- Buttons on the Right -->
             <div class="flex space-x-2 pl-6">
@@ -90,90 +86,33 @@
         </div>
     </div>
     <!-- Product Section -->
-    <h2 class="mt-10 text-lg font-semibold">
-        Produk Terbaru
-    </h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4 mx-4">
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-        <div class="w-full h-32 bg-gray-300 rounded-lg">
-            <img alt="Placeholder image of a product with a gray background" class="w-full h-full object-cover rounded-lg" height="150" src="https://storage.googleapis.com/a1aa/image/dkLhN30hLFYBBlkYLn9fvzrSlO73NkcrKJmEyO7eZXYQji5TA.jpg" width="150" />
-        </div>
-    </div>
+    <h2 class="mt-10 text-lg font-semibold">Produk Terbaru</h2>
+    <div id="product-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4 mx-4"></div>
+
     <!-- Pagination -->
     <div class="flex justify-center items-center mt-10 space-x-1">
-        <button class="px-3 py-1 border rounded-l-lg">
-            Previous
-        </button>
-        <button class="px-3 py-1 border bg-black text-white">
-            1
-        </button>
-        <button class="px-3 py-1 border">
-            2
-        </button>
-        <button class="px-3 py-1 border">
-            3
-        </button>
-        <span class="px-3 py-1">
-            ...
-        </span>
-        <button class="px-3 py-1 border">
-            67
-        </button>
-        <button class="px-3 py-1 border">
-            68
-        </button>
-        <button class="px-3 py-1 border rounded-r-lg">
-            Next
-        </button>
+        <button id="prev-button" class="px-3 py-1 border">Previous</button>
+        <span id="pagination-buttons" class="flex space-x-1"></span>
+        <button id="next-button" class="px-3 py-1 border">Next</button>
     </div>
+
     <!-- Contact Us Section -->
     <div class="flex justify-center items-center mt-10 space-x-4">
         <button class="flex items-center space-x-2 border border-teal-500 rounded-full px-4 py-2">
-            <i class="fas fa-phone text-teal-500">
-            </i>
-            <span class="text-teal-500">
-                CONTACT US
-            </span>
+            <i class="fas fa-phone text-teal-500"></i>
+            <span class="text-teal-500">CONTACT US</span>
         </button>
         <a class="text-green-500 text-2xl" href="#">
-            <i class="fab fa-whatsapp">
-            </i>
+            <i class="fab fa-whatsapp"></i>
         </a>
         <a class="text-pink-500 text-2xl" href="#">
-            <i class="fab fa-instagram">
-            </i>
+            <i class="fab fa-instagram"></i>
         </a>
         <a class="text-blue-600 text-2xl" href="#">
-            <i class="fab fa-facebook">
-            </i>
+            <i class="fab fa-facebook"></i>
         </a>
     </div>
+
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-item');
@@ -208,6 +147,113 @@
 
         // Auto slide every 8 seconds
         setInterval(nextSlide, 8000);
+
+        // slide halaman
+        const apiUrl = 'https://jsonplaceholder.typicode.com/photos';
+        const productsPerPage = 10; // Number of products per page
+        let currentPage = 1; // The current page
+        let products = []; // Store products data
+
+        // Fetch data from the API
+        async function fetchProducts() {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+            products = data; // Store products data to avoid multiple API calls
+        }
+
+        // Function to render products for the current page
+        function renderProducts() {
+            const start = (currentPage - 1) * productsPerPage;
+            const end = start + productsPerPage;
+            const currentProducts = products.slice(start, end);
+
+            const productContainer = document.getElementById('product-container');
+            productContainer.innerHTML = currentProducts
+                .map(
+                    (product) => `
+            <div class="w-full h-32 bg-gray-300 rounded-lg">
+                <img alt="${product.title}" class="w-full h-full object-cover rounded-lg" src="${product.url}" />
+            </div>
+        `
+                )
+                .join('');
+        }
+
+        // Function to render pagination buttons
+        function renderPagination() {
+            const totalPages = Math.ceil(products.length / productsPerPage);
+            const paginationButtons = document.getElementById('pagination-buttons');
+
+            // Limit the number of visible pagination buttons (e.g., 3 pages at a time)
+            const range = 1; // Show only 1 page before and after the current page
+            const startPage = Math.max(1, currentPage - range);
+            const endPage = Math.min(totalPages, currentPage + range);
+
+            let buttonsHtml = '';
+
+            // First button and ellipsis if needed
+            if (startPage > 1) {
+                buttonsHtml += `<button class="px-3 py-1 border" data-page="1">1</button>`;
+                if (startPage > 2) {
+                    buttonsHtml += `<span class="px-3 py-1">...</span>`;
+                }
+            }
+
+            // Pages around the current page
+            for (let i = startPage; i <= endPage; i++) {
+                buttonsHtml += `
+            <button class="px-3 py-1 border ${i === currentPage ? 'bg-black text-white' : ''}" data-page="${i}">
+                ${i}
+            </button>
+        `;
+            }
+
+            // Last page button and ellipsis if needed
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    buttonsHtml += `<span class="px-3 py-1">...</span>`;
+                }
+                buttonsHtml += `<button class="px-3 py-1 border" data-page="${totalPages}">${totalPages}</button>`;
+            }
+
+            paginationButtons.innerHTML = buttonsHtml;
+
+            // Event listener for page buttons
+            document.querySelectorAll('#pagination-buttons button[data-page]').forEach((button) => {
+                button.addEventListener('click', (e) => {
+                    currentPage = Number(e.target.dataset.page);
+                    renderProducts();
+                    renderPagination();
+                });
+            });
+        }
+
+        // Event listener for Next and Previous buttons
+        document.getElementById('prev-button').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--; // Go to the previous page
+                renderProducts();
+                renderPagination();
+            }
+        });
+
+        document.getElementById('next-button').addEventListener('click', () => {
+            const totalPages = Math.ceil(products.length / productsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++; // Go to the next page
+                renderProducts();
+                renderPagination();
+            }
+        });
+
+        // Initialize the page
+        async function initializePage() {
+            await fetchProducts(); // Wait for the data to be fetched
+            renderProducts();
+            renderPagination();
+        }
+
+        initializePage(); // Initialize the page
     </script>
 </body>
 
