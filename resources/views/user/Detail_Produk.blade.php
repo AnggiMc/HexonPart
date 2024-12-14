@@ -10,7 +10,7 @@
 
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
     <div class="absolute top-4 left-4">
-        <a class="flex items-center text-lg text-black" href="/">
+        <a class="flex items-center text-lg text-black" href="/user/Order">
             <i class="fas fa-arrow-left text-xl mr-2"></i>
             Kembali
         </a>

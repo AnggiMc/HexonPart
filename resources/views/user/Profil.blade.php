@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen relative">
-    <a class="absolute top-4 left-4 text-black text-lg" href="/">
+    <a class="absolute top-4 left-4 text-black text-lg" href="/user/Home">
         <i class="fas fa-arrow-left">
         </i>
         Kembali

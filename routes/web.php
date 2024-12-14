@@ -13,3 +13,4 @@ Route::get('/auth/Edit_Profil', [Controllers\Edit_ProfilController::class, 'inde
 Route::get('/auth/Edit_Password', [Controllers\Edit_PasswordController::class, 'index']);
 Route::get('/user/Detail_Produk', [Controllers\Detail_ProdukController::class, 'index']);
 Route::get('/user/Order', [Controllers\OrderController::class, 'index']);
+Route::get('/user/Detail_Order', [Controllers\Detail_OrderController::class, 'index']);
