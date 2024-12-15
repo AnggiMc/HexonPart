@@ -38,11 +38,6 @@
             <!-- Buttons on the Right -->
             <div class="flex space-x-2 pl-6">
                 <button>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"></path>
-                    </svg>
-                </button>
-                <button>
                     <a href="/user/Order">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"></path>
@@ -99,21 +94,112 @@
     </div>
 
     <!-- Contact Us Section -->
-    <div class="flex justify-center items-center mt-10 space-x-4">
-        <button class="flex items-center space-x-2 border border-teal-500 rounded-full px-4 py-2">
-            <i class="fas fa-phone text-teal-500"></i>
-            <span class="text-teal-500">CONTACT US</span>
-        </button>
-        <a class="text-green-500 text-2xl" href="#">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a class="text-pink-500 text-2xl" href="#">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a class="text-blue-600 text-2xl" href="#">
-            <i class="fab fa-facebook"></i>
-        </a>
+    <div class="max-w-full mx-auto p-4 bg-white shadow-md mt-32 text-center">
+        <h1 class="text-blue-600 text-xl font-bold">
+            Asian-Accessory.com
+        </h1>
+        <p>
+            JL. Prof. DR. Latumeten Raya No. 20 J-K Grogol Petamburan. Jakarta Barat. Prov. DKI Jakarta
+        </p>
+        <div class="flex justify-center items-center mt-2">
+            <i class="fas fa-map-marker-alt text-blue-600"></i>
+            <a class="text-blue-600 ml-2" href="#">
+                Lihat Google Maps
+            </a>
+        </div>
+        <div class="flex justify-center items-center mt-2">
+            <i class="fas fa-info-circle text-red-600"></i>
+            <p class="text-red-600 ml-2">
+                Tidak bisa pilih barang langsung di toko kami. Order dulu di website, bayar bisa cash di toko!
+            </p>
+        </div>
+        <p class="mt-2">
+            Telp. (021) 5641747
+        </p>
+        <p>
+            WhatsApp Admin:
+            <a class="text-blue-600" href="tel:081312225555">
+                08 131 222 5555
+            </a>
+        </p>
+        <p class="mt-2 font-bold">
+            Jam Operasional
+        </p>
+        <p>
+            Senin - Sabtu: 08.00 WIB - 17.00 WIB
+        </p>
+        <p>
+            Libur pada hari Minggu dan Tanggal Merah
+        </p>
+        <footer class="mmax-w-full mx-auto p-4 bg-white shadow text-center">
+            <div class="flex flex-col md:flex-row justify-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="font-bold">
+                        Asian Accessory
+                    </p>
+                    <ul>
+                        <li>
+                            <a class="text-gray-700" href="#">
+                                Tentang Kami
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray-700" href="#">
+                                Kontak Kami
+                            </a>
+                        </li>
+                        <li class="flex justify-center space-x-2 mt-2">
+                            <a class="text-gray-700" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="text-gray-700" href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a class="text-gray-700" href="#">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold">
+                        Layanan Pelanggan
+                    </p>
+                    <ul>
+                        <li>
+                            <a class="text-gray-700" href="#">
+                                Cara Belanja
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray-700" href="#">
+                                Biaya Pengiriman
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray-700" href="#">
+                                Cara Pembayaran
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray-700" href="#">
+                                Garansi Produk
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-gray-600 mt-4">
+                <p>
+                    Last Update: 14 Dec 2024 15:52:59 © Asian-Accessory.com
+                </p>
+                <p>
+                    Copyright 2008 - 2024. All Rights Reserved
+                </p>
+            </div>
+        </footer>
     </div>
+
 
     <script>
         let currentSlide = 0;
@@ -152,7 +238,7 @@
 
         // slide halaman
         const apiUrl = 'https://jsonplaceholder.typicode.com/photos';
-        const productsPerPage = 10; // Number of products per page
+        const productsPerPage = 15; // Number of products per page
         let currentPage = 1; // The current page
         let products = []; // Store products data
 
