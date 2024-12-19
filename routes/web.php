@@ -15,3 +15,5 @@ Route::get('/user/Detail_Produk', [Controllers\Detail_ProdukController::class, '
 Route::get('/user/Order', [Controllers\OrderController::class, 'index']);
 Route::get('/user/Detail_Order', [Controllers\Detail_OrderController::class, 'index']);
 Route::get('/admin/dashboard', [Controllers\dashboardController::class, 'index']);
+Route::get('/admin/tambah-data', [Controllers\tambahDataController::class, 'index']);
+Route::get('/admin/data-user', [Controllers\dataUserController::class, 'index']);

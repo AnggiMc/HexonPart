@@ -11,8 +11,8 @@
 <body class="bg-gray-100">
     <div class="flex">
         <!-- Sidebar -->
-         <admin-sidebar>
-         </admin-sidebar>
+         <x-admin-sidebar>
+         </x-admin-sidebar>
         <!-- Main Content -->
         <div class="w-4/5 p-8 ml-64">
             <div class="flex justify-around items-center mb-8">
@@ -76,8 +76,9 @@
                     </p>
                 </div>
             </div>
-            <admin-footer>
-            </admin-footer>
+            <!-- Sidebar -->
+            <x-admin-footer>
+            </x-admin-footer>
         </div>
     </div>
 </body>
