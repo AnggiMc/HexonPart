@@ -96,17 +96,11 @@
     <!-- Contact Us Section -->
     <div class="max-w-full mx-auto p-4 bg-white shadow-md mt-32 text-center">
         <h1 class="text-blue-600 text-xl font-bold">
-            Asian-Accessory.com
+            HexonPart
         </h1>
         <p>
-            JL. Prof. DR. Latumeten Raya No. 20 J-K Grogol Petamburan. Jakarta Barat. Prov. DKI Jakarta
+            JL. Setia Kawan No.27
         </p>
-        <div class="flex justify-center items-center mt-2">
-            <i class="fas fa-map-marker-alt text-blue-600"></i>
-            <a class="text-blue-600 ml-2" href="#">
-                Lihat Google Maps
-            </a>
-        </div>
         <div class="flex justify-center items-center mt-2">
             <i class="fas fa-info-circle text-red-600"></i>
             <p class="text-red-600 ml-2">
@@ -122,20 +116,11 @@
                 08 131 222 5555
             </a>
         </p>
-        <p class="mt-2 font-bold">
-            Jam Operasional
-        </p>
-        <p>
-            Senin - Sabtu: 08.00 WIB - 17.00 WIB
-        </p>
-        <p>
-            Libur pada hari Minggu dan Tanggal Merah
-        </p>
         <footer class="mmax-w-full mx-auto p-4 bg-white shadow text-center">
             <div class="flex flex-col md:flex-row justify-center">
                 <div class="mb-4 md:mb-0">
                     <p class="font-bold">
-                        Asian Accessory
+                        HexonPart
                     </p>
                     <ul>
                         <li>
@@ -161,7 +146,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div >
                     <p class="font-bold">
                         Layanan Pelanggan
                     </p>
@@ -191,10 +176,7 @@
             </div>
             <div class="text-center text-gray-600 mt-4">
                 <p>
-                    Last Update: 14 Dec 2024 15:52:59 © Asian-Accessory.com
-                </p>
-                <p>
-                    Copyright 2008 - 2024. All Rights Reserved
+                    @Quantum Computing
                 </p>
             </div>
         </footer>
