@@ -4,286 +4,155 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>
-        Order
+        Shopping Cart
     </title>
     <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-    <div class="container mx-auto p-4">
-        <a class="absolute top-4 left-4 flex items-center text-lg text-black" href="/user/Home">
-            <i class="fas fa-arrow-left text-xl mr-2">
-            </i>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">E-Shop</a>
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Cari produk..." class="px-4 py-2 border rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden md:block">
+                <div class="menu hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-800 hover:text-blue-500">Kategori</a>
+                    <a href="#" class="text-gray-800 hover:text-blue-500">Keranjang</a>
+                    <a href="#" class="text-gray-800 hover:text-blue-500">Akun</a>
+                </div>
+                <button class="hamburger md:hidden flex items-center px-3 py-2 border rounded text-gray-800 border-gray-800 hover:text-blue-500 hover:border-blue-500">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu md:hidden hidden">
+            <input type="text" placeholder="Cari produk..." class="px-4 py-2 border rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Kategori</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Keranjang</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Akun</a>
+        </div>
+    </header>
+
+    <!-- Back Button -->
+    <div class="container mx-auto px-4 py-4">
+        <a href="/user/Home" class="text-gray-800 hover:text-blue-500 flex items-center">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
             Kembali
         </a>
-        <!-- Shop Item 1 -->
-        <div class="bg-white p-4 rounded-lg shadow-md mb-4">
-            <div class="flex items-center mb-2">
-                <input class="mr-2" type="checkbox" />
-                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">
-                    Mall ORI
-                </span>
-                <span class="ml-2">
-                    Royal Kludge Official Shop
-                </span>
-            </div>
-            <div class="border-t border-b py-4">
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center">
-                        <span class="bg-orange-100 text-orange-600 text-xs px-2 py-1 rounded mr-2">
-                            Diskon Barang Kedua
-                        </span>
-                        <span class="text-sm text-orange-600">
-                            Kombo Hemat dengan harga lebih murah
-                        </span>
-                        <a class="text-orange-600 ml-2" href="#">
-                            Tambah &gt;
-                        </a>
-                    </div>
+    </div>
+    <div class="bg-white p-4 border-b">
+        <div class="flex items-center mb-2">
+            <input class="mr-2" type="checkbox" />
+            <span>
+                Nama Toko
+            </span>
+        </div>
+        <div class="flex items-center">
+            <input class="mr-2" type="checkbox" />
+            <img alt="Product Image" class="w-12 h-12 border mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/yJEIh7i4l3oHMJ9GT2aueMRWHqq3UBk5040YAYbqtTHQfsenA.jpg" width="50" />
+            <div class="flex-1">
+                <div class="font-bold">
+                    Nama Produk
                 </div>
-                <div class="flex mt-4">
-                    <img alt="Royal Kludge RK R65 Black 66 key Wired Gaming Keyboard" class="w-20 h-20 object-cover mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/5ihtXUv83vqmLdVidGXXiHARZmlWHgUrfMaHn5STNGD8eC7TA.jpg" width="100" />
-                    <div class="flex-1">
-                        <div class="text-sm font-semibold">
-                            Royal Kludge RK R65 Black 66 key Wired Gaming Keyboard
-                        </div>
-                        <div class="text-sm text-gray-500">
-                            Variasi: Black, Blue
-                        </div>
-                        <div class="flex items-center mt-2">
-                            <span class="text-gray-500 line-through mr-2">
-                                Rp505.999
-                            </span>
-                            <span class="text-red-500 font-semibold">
-                                Rp455.399
-                            </span>
-                            <span class="bg-red-100 text-red-500 text-xs px-2 py-1 rounded ml-2">
-                                Discount 10%
-                            </span>
-                            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded ml-2">
-                                Terupdate
-                            </span>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <button class="bg-gray-200 text-gray-600 px-2 py-1 rounded">
-                            -
-                        </button>
-                        <input class="w-12 text-center mx-2 border rounded" type="text" value="1" />
-                        <button class="bg-gray-200 text-gray-600 px-2 py-1 rounded">
-                            +
-                        </button>
-                    </div>
-                    <div class="text-red-500 font-semibold ml-4">
-                        Rp455.399
-                    </div>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Hapus
-                    </a>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Produk Serupa
-                    </a>
+                <div>
+                    Produk ini merupakan sebuah ini itu ikeh
                 </div>
             </div>
-        </div>
-        <!-- Voucher Section -->
-        <div class="bg-white p-4 rounded-lg shadow-md mb-4">
-            <div class="flex items-center">
-                <span class="text-sm text-gray-600">
-                    Tersedia Voucher Diskon s/d Rp50RB
-                </span>
-                <a class="text-orange-600 ml-2" href="#">
-                    Voucher Lainnya
-                </a>
-            </div>
-            <div class="text-sm text-gray-600 mt-2">
-                Gratis Ongkir s/d Rp20.000 dengan min. belanja Rp0; Gratis Ongkir s/d Rp300.000 dengan min. belanja Rp100.000
-                <a class="text-orange-600" href="#">
-                    Pelajari lebih lanjut
-                </a>
-            </div>
-        </div>
-        <!-- Shop Item 2 -->
-        <div class="bg-white p-4 rounded-lg shadow-md mb-4">
-            <div class="flex items-center mb-2">
-                <input class="mr-2" type="checkbox" />
-                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">
-                    Umah Digital
-                </span>
-            </div>
-            <div class="border-t border-b py-4">
-                <div class="flex mt-4">
-                    <img alt="JASA REFF/REFFERAL TELEGRAM BOT AIRDROP" class="w-20 h-20 object-cover mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/Y9Y1vOeaD1z0fkt1jtWRBmEh2nd7PrNV2Wix7dHVVfiu7F2nA.jpg" width="100" />
-                    <div class="flex-1">
-                        <div class="text-sm font-semibold">
-                            JASA REFF/REFFERAL TELEGRAM BOT AIRDROP
-                        </div>
-                        <div class="text-sm text-gray-500">
-                            Variasi: Goats
-                        </div>
-                        <div class="text-sm text-red-500 mt-2">
-                            Variasi yang dipilih telah dihapuskan. Silakan pilih variasi lainnya.
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="w-12 text-center mx-2 border rounded" type="text" value="10" />
-                    </div>
-                    <div class="text-red-500 font-semibold ml-4">
-                        Rp0
-                    </div>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Hapus
-                    </a>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Produk Serupa
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Shop Item 2 -->
-        <div class="bg-white p-4 rounded-lg shadow-md mb-4">
-            <div class="flex items-center mb-2">
-                <input class="mr-2" type="checkbox" />
-                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">
-                    Umah Digital
-                </span>
-            </div>
-            <div class="border-t border-b py-4">
-                <div class="flex mt-4">
-                    <img alt="JASA REFF/REFFERAL TELEGRAM BOT AIRDROP" class="w-20 h-20 object-cover mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/Y9Y1vOeaD1z0fkt1jtWRBmEh2nd7PrNV2Wix7dHVVfiu7F2nA.jpg" width="100" />
-                    <div class="flex-1">
-                        <div class="text-sm font-semibold">
-                            JASA REFF/REFFERAL TELEGRAM BOT AIRDROP
-                        </div>
-                        <div class="text-sm text-gray-500">
-                            Variasi: Goats
-                        </div>
-                        <div class="text-sm text-red-500 mt-2">
-                            Variasi yang dipilih telah dihapuskan. Silakan pilih variasi lainnya.
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="w-12 text-center mx-2 border rounded" type="text" value="10" />
-                    </div>
-                    <div class="text-red-500 font-semibold ml-4">
-                        Rp0
-                    </div>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Hapus
-                    </a>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Produk Serupa
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Shop Item 2 -->
-        <div class="bg-white p-4 rounded-lg shadow-md mb-4">
-            <div class="flex items-center mb-2">
-                <input class="mr-2" type="checkbox" />
-                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">
-                    Umah Digital
-                </span>
-            </div>
-            <div class="border-t border-b py-4">
-                <div class="flex mt-4">
-                    <img alt="JASA REFF/REFFERAL TELEGRAM BOT AIRDROP" class="w-20 h-20 object-cover mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/Y9Y1vOeaD1z0fkt1jtWRBmEh2nd7PrNV2Wix7dHVVfiu7F2nA.jpg" width="100" />
-                    <div class="flex-1">
-                        <div class="text-sm font-semibold">
-                            JASA REFF/REFFERAL TELEGRAM BOT AIRDROP
-                        </div>
-                        <div class="text-sm text-gray-500">
-                            Variasi: Goats
-                        </div>
-                        <div class="text-sm text-red-500 mt-2">
-                            Variasi yang dipilih telah dihapuskan. Silakan pilih variasi lainnya.
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="w-12 text-center mx-2 border rounded" type="text" value="10" />
-                    </div>
-                    <div class="text-red-500 font-semibold ml-4">
-                        Rp0
-                    </div>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Hapus
-                    </a>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Produk Serupa
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Shop Item 2 -->
-        <div class="bg-white p-4 rounded-lg shadow-md mb-4">
-            <div class="flex items-center mb-2">
-                <input class="mr-2" type="checkbox" />
-                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">
-                    Umah Digital
-                </span>
-            </div>
-            <div class="border-t border-b py-4">
-                <div class="flex mt-4">
-                    <img alt="JASA REFF/REFFERAL TELEGRAM BOT AIRDROP" class="w-20 h-20 object-cover mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/Y9Y1vOeaD1z0fkt1jtWRBmEh2nd7PrNV2Wix7dHVVfiu7F2nA.jpg" width="100" />
-                    <div class="flex-1">
-                        <div class="text-sm font-semibold">
-                            JASA REFF/REFFERAL TELEGRAM BOT AIRDROP
-                        </div>
-                        <div class="text-sm text-gray-500">
-                            Variasi: Goats
-                        </div>
-                        <div class="text-sm text-red-500 mt-2">
-                            Variasi yang dipilih telah dihapuskan. Silakan pilih variasi lainnya.
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="w-12 text-center mx-2 border rounded" type="text" value="10" />
-                    </div>
-                    <div class="text-red-500 font-semibold ml-4">
-                        Rp0
-                    </div>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Hapus
-                    </a>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Produk Serupa
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Section -->
-        <div class="bg-white p-4 rounded-lg shadow-md fixed bottom-0 left-0 w-full z-10">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <input class="mr-2" type="checkbox" />
-                    <span class="text-sm text-gray-600">
-                        Pilih Semua (8)
-                    </span>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Hapus
-                    </a>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Hapus produk dari Penjual tidak aktif
-                    </a>
-                    <a class="text-gray-500 ml-4" href="#">
-                        Tambahkan ke Favorit
-                    </a>
+            <div class="text-right">
+                <div class="font-bold">
+                    RP 175.000
                 </div>
                 <div class="flex items-center">
-                    <span class="text-sm text-gray-600">
-                        Total (5 produk):
+                    <button class="border px-2">
+                        -
+                    </button>
+                    <span class="mx-2">
+                        1
                     </span>
-                    <span class="text-red-500 font-semibold ml-2">
-                        Rp100.000.000
-                    </span>
-                    <button class="bg-red-500 text-white px-4 py-2 rounded ml-4">
-                        Checkout
+                    <button class="border px-2">
+                        +
                     </button>
                 </div>
             </div>
+            <div class="text-orange-500 font-bold ml-4">
+                RP 175.000
+            </div>
+            <button class="text-gray-600 ml-4">
+                <i class="fas fa-trash">
+                </i>
+            </button>
         </div>
+    </div>
+    <div class="bg-white p-4 border-b">
+        <div class="flex items-center mb-2">
+            <input class="mr-2" type="checkbox" />
+            <span>
+                Nama Toko
+            </span>
+        </div>
+        <div class="flex items-center">
+            <input class="mr-2" type="checkbox" />
+            <img alt="Product Image" class="w-12 h-12 border mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/yJEIh7i4l3oHMJ9GT2aueMRWHqq3UBk5040YAYbqtTHQfsenA.jpg" width="50" />
+            <div class="flex-1">
+                <div class="font-bold">
+                    Nama Produk
+                </div>
+                <div>
+                    Produk ini merupakan sebuah ini itu ikeh
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="font-bold">
+                    RP 175.000
+                </div>
+                <div class="flex items-center">
+                    <button class="border px-2">
+                        -
+                    </button>
+                    <span class="mx-2">
+                        1
+                    </span>
+                    <button class="border px-2">
+                        +
+                    </button>
+                </div>
+            </div>
+            <div class="text-orange-500 font-bold ml-4">
+                RP 175.000
+            </div>
+            <button class="text-gray-600 ml-4">
+                <i class="fas fa-trash">
+                </i>
+            </button>
+        </div>
+    </div>
+    <div class="bg-gray-200 p-4 rounded-b-lg flex justify-between items-center mt-4">
+        <div class="flex items-center">
+            <input class="mr-2" type="checkbox" />
+            <span>
+                Pilih Semua
+            </span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span>
+                Total Produk
+            </span>
+            <span class="text-orange-500 font-bold">
+                Rp75.000
+            </span>
+            <button class="bg-orange-500 text-white px-4 py-2 rounded">
+                Checkout
+            </button>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
