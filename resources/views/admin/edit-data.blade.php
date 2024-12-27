@@ -3,10 +3,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>
-        Tambah Data
+        Edit Data
     </title>
-    <script src="https://cdn.tailwindcss.com">
-    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
  <body class="bg-gray-200">
@@ -16,7 +15,10 @@
     </x-admin-sidebar>
     <!-- Main Content -->
     <div class="flex-1 p-10 ml-64">
-        <h1 class="text-2xl mb-6">Tambah Data</h1>
+        <div class="flex justify-between items-center mb-8">
+            <a href="/admin/dashboard" class="bg-gray-400 text-white py-2 px-4 rounded">Kembali</a>
+            <h1 class="text-2xl text-center flex-grow">Edit Data</h1>
+        </div>
         <form  method="">
         <div class="mb-4">
             <label class="block text-gray-700">Gambar</label>
@@ -41,7 +43,7 @@
             </select>
         </div>
         <div class="flex justify-center">
-            <button name="submit" id="submit" type="submit" class="bg-gray-400 text-white py-2 px-4 rounded">Submit</button>
+            <button name="ubah" id="ubah" type="submit" class="bg-gray-400 text-white py-2 px-4 rounded">Ubah Data</button>
         </div>
         </form>
         <!-- Sidebar -->

@@ -3,7 +3,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Profile
+   Edit Profile
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -19,7 +19,7 @@
     <div class="flex justify-center mb-6">
      <img alt="User profile picture" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/oIQ5JW37ArpPIdtKeSfjw4US06zBM4vBBmrQ4E5WCdNGoF5TA.jpg" width="100"/>
     </div>
-    <form class="space-y-4" method="">
+    <form class="space-y-4"  method="">
      <div>
       <label class="block text-sm font-medium text-gray-700" for="nama">
        Nama
@@ -51,9 +51,9 @@
       <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" id="email" name="email" type="email" value="Aldi@gmail.com"/>
      </div>
      <div class="flex justify-center">
-      <a class="bg-gray-300 text-gray-700 px-4 py-2 rounded-md" name="ubah" id="ubah" type="submit" href="/admin/edit-profile">
-       Ubah Data
-      </a>
+      <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-md" name="submit" id="submit" type="submit">
+       submit
+      </button>
      </div>
     </form>
    </div>
