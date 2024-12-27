@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Produk</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <style>
         /* Custom styles for the hamburger menu */
         .hamburger {
@@ -149,25 +150,42 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-12">
+    <footer class="bg-white py-8 border-t border-gray-200 mt-8">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="font-bold">Tentang Kami</h3>
-                    <p class="text-gray-400 mt-2">Kami adalah toko online terpercaya yang menyediakan berbagai produk berkualitas.</p>
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <a href="#" class="text-black"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div>
-                    <h3 class="font-bold">Bantuan</h3>
-                    <ul class="mt-2 space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Kontak Kami</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold">Ikuti Kami</h3>
-                    <div class="flex space-x-4 mt-2">
-                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
-                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                <div class="flex space-x-16">
+                    <div>
+                        <h3 class="font-semibold mb-2">Use cases</h3>
+                        <ul>
+                            <li><a href="#" class="text-black">UI design</a></li>
+                            <li><a href="#" class="text-black">UX design</a></li>
+                            <li><a href="#" class="text-black">Wireframing</a></li>
+                            <li><a href="#" class="text-black">Diagramming</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Explore</h3>
+                        <ul>
+                            <li><a href="#" class="text-black">Design</a></li>
+                            <li><a href="#" class="text-black">Prototyping</a></li>
+                            <li><a href="#" class="text-black">Development features</a></li>
+                            <li><a href="#" class="text-black">Design systems</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Resources</h3>
+                        <ul>
+                            <li><a href="#" class="text-black">Blog</a></li>
+                            <li><a href="#" class="text-black">Best practices</a></li>
+                            <li><a href="#" class="text-black">Colors</a></li>
+                            <li><a href="#" class="text-black">Color wheel</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
