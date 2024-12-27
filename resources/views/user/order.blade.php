@@ -47,111 +47,116 @@
             Kembali
         </a>
     </div>
-    <div class="bg-white p-4 border-b">
-        <div class="flex items-center mb-2">
-            <input class="mr-2" type="checkbox" />
-            <span>
-                Nama Toko
-            </span>
-        </div>
-        <div class="flex items-center">
-            <input class="mr-2" type="checkbox" />
-            <img alt="Product Image" class="w-12 h-12 border mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/yJEIh7i4l3oHMJ9GT2aueMRWHqq3UBk5040YAYbqtTHQfsenA.jpg" width="50" />
-            <div class="flex-1">
-                <div class="font-bold">
-                    Nama Produk
-                </div>
-                <div>
-                    Produk ini merupakan sebuah ini itu ikeh
-                </div>
+
+    <div class="container mx-auto px-4 py-4">
+        <div class="bg-white p-4 border-b">
+            <div class="flex items-center mb-2">
+                <input class="mr-2" type="checkbox" />
+                <span>
+                    Nama Toko
+                </span>
             </div>
-            <div class="text-right">
-                <div class="font-bold">
+            <div class="flex items-center">
+                <input class="mr-2" type="checkbox" />
+                <img alt="Product Image" class="w-12 h-12 border mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/yJEIh7i4l3oHMJ9GT2aueMRWHqq3UBk5040YAYbqtTHQfsenA.jpg" width="50" />
+                <div class="flex-1">
+                    <div class="font-bold">
+                        Nama Produk
+                    </div>
+                    <div>
+                        Produk ini merupakan sebuah ini itu ikeh
+                    </div>
+                </div>
+                <div class="text-right">
+                    <div class="font-bold">
+                        RP 175.000
+                    </div>
+                    <div class="flex items-center">
+                        <button class="border px-2">
+                            -
+                        </button>
+                        <span class="mx-2">
+                            1
+                        </span>
+                        <button class="border px-2">
+                            +
+                        </button>
+                    </div>
+                </div>
+                <div class="text-orange-500 font-bold ml-4">
                     RP 175.000
                 </div>
-                <div class="flex items-center">
-                    <button class="border px-2">
-                        -
-                    </button>
-                    <span class="mx-2">
-                        1
-                    </span>
-                    <button class="border px-2">
-                        +
-                    </button>
-                </div>
+                <button class="text-gray-600 ml-4">
+                    <i class="fas fa-trash">
+                    </i>
+                </button>
             </div>
-            <div class="text-orange-500 font-bold ml-4">
-                RP 175.000
-            </div>
-            <button class="text-gray-600 ml-4">
-                <i class="fas fa-trash">
-                </i>
-            </button>
         </div>
-    </div>
-    <div class="bg-white p-4 border-b">
-        <div class="flex items-center mb-2">
-            <input class="mr-2" type="checkbox" />
-            <span>
-                Nama Toko
-            </span>
-        </div>
-        <div class="flex items-center">
-            <input class="mr-2" type="checkbox" />
-            <img alt="Product Image" class="w-12 h-12 border mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/yJEIh7i4l3oHMJ9GT2aueMRWHqq3UBk5040YAYbqtTHQfsenA.jpg" width="50" />
-            <div class="flex-1">
-                <div class="font-bold">
-                    Nama Produk
-                </div>
-                <div>
-                    Produk ini merupakan sebuah ini itu ikeh
-                </div>
+        <div class="bg-white p-4 border-b">
+            <div class="flex items-center mb-2">
+                <input class="mr-2" type="checkbox" />
+                <span>
+                    Nama Toko
+                </span>
             </div>
-            <div class="text-right">
-                <div class="font-bold">
+            <div class="flex items-center">
+                <input class="mr-2" type="checkbox" />
+                <img alt="Product Image" class="w-12 h-12 border mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/yJEIh7i4l3oHMJ9GT2aueMRWHqq3UBk5040YAYbqtTHQfsenA.jpg" width="50" />
+                <div class="flex-1">
+                    <div class="font-bold">
+                        Nama Produk
+                    </div>
+                    <div>
+                        Produk ini merupakan sebuah ini itu ikeh
+                    </div>
+                </div>
+                <div class="text-right">
+                    <div class="font-bold">
+                        RP 175.000
+                    </div>
+                    <div class="flex items-center">
+                        <button class="border px-2">
+                            -
+                        </button>
+                        <span class="mx-2">
+                            1
+                        </span>
+                        <button class="border px-2">
+                            +
+                        </button>
+                    </div>
+                </div>
+                <div class="text-orange-500 font-bold ml-4">
                     RP 175.000
                 </div>
-                <div class="flex items-center">
-                    <button class="border px-2">
-                        -
-                    </button>
-                    <span class="mx-2">
-                        1
-                    </span>
-                    <button class="border px-2">
-                        +
-                    </button>
-                </div>
+                <button class="text-gray-600 ml-4">
+                    <i class="fas fa-trash">
+                    </i>
+                </button>
             </div>
-            <div class="text-orange-500 font-bold ml-4">
-                RP 175.000
-            </div>
-            <button class="text-gray-600 ml-4">
-                <i class="fas fa-trash">
-                </i>
-            </button>
         </div>
     </div>
-    <div class="bg-gray-200 p-4 rounded-b-lg flex justify-between items-center mt-4">
-        <div class="flex items-center">
-            <input class="mr-2" type="checkbox" />
-            <span>
-                Pilih Semua
-            </span>
+
+    <div class="container mx-auto px-4 py-4">
+        <div class="bg-gray-200 p-4 rounded-b-lg flex justify-between items-center mt-4">
+            <div class="flex items-center">
+                <input class="mr-2" type="checkbox" />
+                <span>
+                    Pilih Semua
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>
+                    Total Produk
+                </span>
+                <span class="text-orange-500 font-bold">
+                    Rp75.000
+                </span>
+                <button class="bg-orange-500 text-white px-4 py-2 rounded">
+                    Checkout
+                </button>
+            </div>
         </div>
-        <div class="flex items-center space-x-4">
-            <span>
-                Total Produk
-            </span>
-            <span class="text-orange-500 font-bold">
-                Rp75.000
-            </span>
-            <button class="bg-orange-500 text-white px-4 py-2 rounded">
-                Checkout
-            </button>
-        </div>
-    </div>
     </div>
 </body>
 
