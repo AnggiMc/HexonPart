@@ -62,24 +62,18 @@
                     <table class="w-full text-left text-sm">
                         <thead>
                             <tr>
-                                <th class="border px-2 py-1">ID</th>
+                                <th class="border px-2 py-1">ID Log</th>
                                 <th class="border px-2 py-1">Nama</th>
-                                <th class="border px-2 py-1">Role</th>
+                                <th class="border px-2 py-1">Action</th>
                                 <th class="border px-2 py-1">Timestamp</th>
-                                <th class="border px-2 py-1">Status</th>
-                                <th class="border px-2 py-1">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="border px-2 py-1">1</td>
                                 <td class="border px-2 py-1">Ryan</td>
-                                <td class="border px-2 py-1">Super Admin</td>
-                                <td class="border px-2 py-1">28-12-2024; 15:30:00</td>
-                                <td class="border px-2 py-1">Active</td>
-                                <td class="border px-2 py-1">
-                                    <i class="fas fa-edit text-blue-500 cursor-pointer"></i>
-                                    <i class="fas fa-trash text-red-500 cursor-pointer"></i>
+                                <td class="border px-2 py-1">Add Product</td>
+                                <td class="border px-2 py-1">2024-12-28 20:20:20</td>
                                 </td>
                             </tr>
                         </tbody>
@@ -87,8 +81,7 @@
                 </div>
             </div>
             <!-- Footer -->
-            <x-admin-footer>
-            </x-admin-footer>
+            <x-admin-footer></x-admin-footer>
         </div>
     </div>
   <script src="{{ asset('js/sidebar.js') }}"></script>

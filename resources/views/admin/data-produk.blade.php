@@ -33,41 +33,45 @@
             <thead>
                 <tr class="w-full bg-gray-200 text-left">
                     <th class="py-2 px-4">ID</th>
-                    <th class="py-2 px-4">NAMA</th>
-                    <th class="py-2 px-4">Price</th>
-                    <th class="py-2 px-4">Discount</th>
-                    <th class="py-2 px-4">Size</th>
-                    <th class="py-2 px-4">Condition</th>
-                    <th class="py-2 px-4">Brands</th>
-                    <th class="py-2 px-4">Quantity</th>
-                    <th class="py-2 px-4">Image</th>
+                    <th class="py-2 px-4">Nama</th>
+                    <th class="py-2 px-4">Deskripsi</th>
+                    <th class="py-2 px-4">Harga</th>
+                    <th class="py-2 px-4">Stok</th>
+                    <th class="py-2 px-4">Gambar</th>
+                    <th class="py-2 px-4">ID Brand</th>
+                    <th class="py-2 px-4">ID Category</th>
                     <th class="py-2 px-4">Status</th>
-                    <th class="py-2 px-4">Attributes</th>
+                    <th class="py-2 px-4">Created at</th>
+                    <th class="py-2 px-4">Updated at</th>
+                    <th class="py-2 px-4">Total Sales</th>
+                    <th class="py-2 px-4">Total Revenue</th>
                     <th class="py-2 px-4">Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="border-b">
-                    <td class="py-2 px-4">N/A</td>
-                    <td class="py-2 px-4">Yes</td>
-                    <td class="py-2 px-4">1299</td>
-                    <td class="py-2 px-4">10</td>
-                    <td class="py-2 px-4">N/A</td>
-                    <td class="py-2 px-4">New</td>
-                    <td class="py-2 px-4">Prof.</td>
-                    <td class="py-2 px-4">100</td>
+                    <th class="py-2 px-4">1</th>
+                    <th class="py-2 px-4">Oli</th>
+                    <th class="py-2 px-4">Oli Honda</th>
+                    <th class="py-2 px-4">RP.25000</th>
+                    <th class="py-2 px-4">100</th>
                     <td class="py-2 px-4">
                     <img alt="Product image 1" height="50" src="https://storage.googleapis.com/a1aa/image/UH7PZADiyS7wABT95oFxGvVeW7f72GuMiZUzoAhrVF9KJXfnA.jpg" width="50"/>
                     </td>
-                    <td class="py-2 px-4">Active</td>
-                    <td class="py-2 px-4">N/A</td>
+                    <th class="py-2 px-4">2</th>
+                    <th class="py-2 px-4">1</th>
+                    <th class="py-2 px-4">Active</th>
+                    <th class="py-2 px-4">2024-12-14 22:53:54</th>
+                    <th class="py-2 px-4">2024-12-14 22:53:54</th>
+                    <th class="py-2 px-4">0</th>
+                    <th class="py-2 px-4">0</th>
                     <td class="py-2 px-4">
-                    <button class="text-blue-500">
-                    <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="text-red-500">
-                    <i class="fas fa-trash"></i>
-                    </button>
+                        <a class="text-blue-500" href="/admin/edit-data-produk">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a class="text-red-500">
+                            <i class="fas fa-trash"></i>
+                        </a>
                     </td>
                 </tr>
             </tbody>

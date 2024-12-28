@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Tambah Data Produk</title>
+    <title>Ubah Data Produk</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
@@ -13,9 +13,10 @@
     <!-- Sidebar -->
     <x-admin-sidebar>
     </x-admin-sidebar>
-    <div class="flex-1 p-8">
+   <!-- Main Content -->
+   <div class="flex-1 p-8">
     <div class="flex justify-between items-center mb-8">
-        <h1 class="text-2xl font-bold">Tambah Data Produk</h1>
+        <h1 class="text-2xl font-bold">Ubah Data Produk</h1>
         <div class="flex items-center space-x-4">
             <i class="fas fa-moon text-xl"></i>
             <i class="fas fa-bell text-xl"></i>
@@ -77,10 +78,13 @@
             <input class="border p-2 w-full" name="revenue" id="revenue" placeholder="Masukan Total Revenue Barang" type="number"/>
         </div>
         <div class="flex justify-center">
-            <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded" name="tambah" id="tambah" type="submit">Tambah Data</button>
+            <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded" name="Ubah" id="Ubah" type="submit">Ubah Data</button>
         </div>
     </form>
-    </div>
+    <!-- Footer -->
+    <x-admin-footer>
+    </x-admin-footer>
+   </div>
   </div>
   <script src="{{ asset('js/sidebar.js') }}"></script>
  </body>
