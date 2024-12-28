@@ -5,6 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
@@ -14,121 +15,82 @@
          <x-admin-sidebar>
          </x-admin-sidebar>
         <!-- Main Content -->
-        <div class="w-4/5 p-8 ml-64">
-            <div class="flex justify-around items-center mb-8">
-                <input class="border border-gray-300 rounded-full py-2 px-4 w-1/2" name="cari" id="cari" placeholder="Cari Barang" type="text" />
-                <i class="mr-72 fas fa-search text-gray-500">
-                </i>
-            </div>
-            <div class="grid grid-cols-3 gap-8">
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <img alt="Placeholder image" class="w-full h-32 object-cover mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/5ATv3X534OYtDxfltvnrPZsRLtN1pgveIcrsiVHZXPEhXE5TA.jpg" width="100" />
-                    <h2 class="text-lg font-semibold mb-2">
-                        Title
-                    </h2>
-                    <p class="text-gray-600">
-                        Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.
-                    </p>
-                    <div class="flex justify-between">
-                        <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" href="/admin/edit-data">
-                            Edit
-                        </a>
-                        <a class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" href="#">
-                            Hapus
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <img alt="Placeholder image" class="w-full h-32 object-cover mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/5ATv3X534OYtDxfltvnrPZsRLtN1pgveIcrsiVHZXPEhXE5TA.jpg" width="100" />
-                    <h2 class="text-lg font-semibold mb-2">
-                        Title
-                    </h2>
-                    <p class="text-gray-600">
-                        Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.
-                    </p>
-                    <div class="flex justify-between">
-                        <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" href="/admin/edit-data">
-                            Edit
-                        </a>
-                        <a class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" href="#">
-                            Hapus
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <img alt="Placeholder image" class="w-full h-32 object-cover mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/5ATv3X534OYtDxfltvnrPZsRLtN1pgveIcrsiVHZXPEhXE5TA.jpg" width="100" />
-                    <h2 class="text-lg font-semibold mb-2">
-                        Title
-                    </h2>
-                    <p class="text-gray-600">
-                        Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.
-                    </p>
-                    <div class="flex justify-between">
-                        <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" href="/admin/edit-data">
-                            Edit
-                        </a>
-                        <a class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" href="#">
-                            Hapus
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <img alt="Placeholder image" class="w-full h-32 object-cover mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/5ATv3X534OYtDxfltvnrPZsRLtN1pgveIcrsiVHZXPEhXE5TA.jpg" width="100" />
-                    <h2 class="text-lg font-semibold mb-2">
-                        Title
-                    </h2>
-                    <p class="text-gray-600">
-                        Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.
-                    </p>
-                    <div class="flex justify-between">
-                        <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" href="/admin/edit-data">
-                            Edit
-                        </a>
-                        <a class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" href="#">
-                            Hapus
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <img alt="Placeholder image" class="w-full h-32 object-cover mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/5ATv3X534OYtDxfltvnrPZsRLtN1pgveIcrsiVHZXPEhXE5TA.jpg" width="100" />
-                    <h2 class="text-lg font-semibold mb-2">
-                        Title
-                    </h2>
-                    <p class="text-gray-600">
-                        Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.
-                    </p>
-                    <div class="flex justify-between">
-                        <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" href="/admin/edit-data">
-                            Edit
-                        </a>
-                        <a class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" href="#">
-                            Hapus
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <img alt="Placeholder image" class="w-full h-32 object-cover mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/5ATv3X534OYtDxfltvnrPZsRLtN1pgveIcrsiVHZXPEhXE5TA.jpg" width="100" />
-                    <h2 class="text-lg font-semibold mb-2">
-                        Title
-                    </h2>
-                    <p class="text-gray-600">
-                        Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.
-                    </p>
-                    <div class="flex justify-between">
-                        <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" href="/admin/edit-data">
-                            Edit
-                        </a>
-                        <a class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" href="#">
-                            Hapus
-                        </a>
-                    </div>
+        <div class="w-4/5 p-8">
+            <div class="flex justify-between items-center mb-8">
+                <img alt="Hexon Parts Logo" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/NLesgKtDmT2dDCJxiVIhWgFIUJNP9MRLclwemGzV7LuNQWfnA.jpg" width="100"/>
+                <h1 class="text-2xl font-bold">Selamat Datang di Panel Admin</h1>
+                <div class="flex space-x-4">
+                    <i class="fas fa-moon text-2xl"></i>
+                    <i class="fas fa-bell text-2xl"></i>
                 </div>
             </div>
-            <!-- Sidebar -->
+            <div class="grid grid-cols-3 gap-4 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <i class="fas fa-box text-4xl mb-4"></i>
+                    <p class="text-2xl font-bold">100</p>
+                    <p>Total Produk</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <i class="fas fa-user text-4xl mb-4"></i>
+                    <p class="text-2xl font-bold">100</p>
+                    <p>Total User</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <i class="fas fa-shopping-cart text-4xl mb-4"></i>
+                    <p class="text-2xl font-bold">100</p>
+                    <p>Total Order</p>
+                    </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <i class="fas fa-folder text-4xl mb-4"></i>
+                    <p class="text-2xl font-bold">100</p>
+                    <p>Total Category</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <i class="fas fa-tag text-4xl mb-4"></i>
+                    <p class="text-2xl font-bold">100</p>
+                    <p>Total Brand</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <i class="fas fa-credit-card text-4xl mb-4"></i>
+                    <p class="text-2xl font-bold">100</p>
+                    <p>Total Payment Gateway</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-lg font-bold mb-4">System Logs</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead>
+                            <tr>
+                                <th class="border px-2 py-1">ID</th>
+                                <th class="border px-2 py-1">Nama</th>
+                                <th class="border px-2 py-1">Role</th>
+                                <th class="border px-2 py-1">Timestamp</th>
+                                <th class="border px-2 py-1">Status</th>
+                                <th class="border px-2 py-1">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border px-2 py-1">1</td>
+                                <td class="border px-2 py-1">Ryan</td>
+                                <td class="border px-2 py-1">Super Admin</td>
+                                <td class="border px-2 py-1">28-12-2024; 15:30:00</td>
+                                <td class="border px-2 py-1">Active</td>
+                                <td class="border px-2 py-1">
+                                    <i class="fas fa-edit text-blue-500 cursor-pointer"></i>
+                                    <i class="fas fa-trash text-red-500 cursor-pointer"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Footer -->
             <x-admin-footer>
             </x-admin-footer>
         </div>
     </div>
-</body>
-
+  <script src="{{ asset('js/sidebar.js') }}"></script>
+ </body>
 </html>

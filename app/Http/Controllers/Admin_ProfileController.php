@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class dataUserController extends Controller
+class Admin_ProfileController extends Controller
 {
     public function index()
+
     {
-        return view('admin.data-user');
+        return view('admin.profile');
     }
 }

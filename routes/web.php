@@ -15,9 +15,6 @@ Route::get('/user/Detail_Produk', [Controllers\Detail_ProdukController::class, '
 Route::get('/user/Order', [Controllers\OrderController::class, 'index']);
 Route::get('/user/Detail_Order', [Controllers\Detail_OrderController::class, 'index']);
 Route::get('/admin/dashboard', [Controllers\dashboardController::class, 'index']);
-Route::get('/admin/tambah-data', [Controllers\tambahDataController::class, 'index']);
-Route::get('/admin/edit-data', [Controllers\editDataController::class, 'index']);
-Route::get('/admin/data-user', [Controllers\dataUserController::class, 'index']);
-Route::get('/admin/data-order', [Controllers\dataOrderController::class, 'index']);
-Route::get('/admin/profile', [Controllers\profileController::class, 'index']);
-Route::get('/admin/edit-profile', [Controllers\editProfileController::class, 'index']);
+Route::get('/admin/data-produk', [Controllers\Data_ProdukController::class, 'index']);
+Route::get('/admin/tambah-produk', [Controllers\Tambah_ProdukController::class, 'index']);
+Route::get('/admin/profile', [Controllers\Admin_ProfileController::class, 'index']);
