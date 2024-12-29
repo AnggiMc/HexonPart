@@ -16,6 +16,9 @@
    <!-- Main Content -->
    <div class="flex-1 p-8">
     <div class="flex justify-between items-center mb-8">
+        <a class="text-blue-700" href="/admin/data-produk">
+            <i class="fas fa-arrow-left text-xl"></i>
+        </a>
         <h1 class="text-2xl font-bold">Ubah Data Produk</h1>
         <div class="flex items-center space-x-4">
             <i class="fas fa-moon text-xl"></i>

@@ -9,13 +9,17 @@
   <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
  </head>
- <body class="bg-gray-100 flex min-h-screen">
+ <body class="bg-white">
+  <div class="flex">
     <!-- Sidebar -->
     <x-admin-sidebar>
     </x-admin-sidebar>
   <!-- Main Content -->
   <div class="flex-1 p-10 flex flex-col items-center">
    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+    <a class="text-blue-700" href="/admin/profile">
+      <i class="fas fa-arrow-left text-xl"></i>
+    </a>
     <div class="flex justify-center mb-6">
      <img alt="User profile picture" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/oIQ5JW37ArpPIdtKeSfjw4US06zBM4vBBmrQ4E5WCdNGoF5TA.jpg" width="100"/>
     </div>
@@ -44,9 +48,10 @@
       <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-md" name="submit" id="submit" type="submit">submit</button>
      </div>
     </form>
-   </div>
     <!-- Sidebar -->
     <x-admin-footer></x-admin-footer>
+   </div>
+  </div>
   </div>
   <script src="{{ asset('js/sidebar.js') }}"></script>
  </body>

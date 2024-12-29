@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
  </head>
- <body class="bg-gray-100 flex min-h-screen">
+ <body class="bg-white">
+  <div class="flex">
     <!-- Sidebar -->
     <x-admin-sidebar>
     </x-admin-sidebar>
@@ -44,9 +45,10 @@
           </a>
         </div>
       </form>
-    </div>
     <!-- Sidebar -->
     <x-admin-footer></x-admin-footer>
+    </div>
+  </div>
   </div>
   <script src="{{ asset('js/sidebar.js') }}"></script>
  </body>

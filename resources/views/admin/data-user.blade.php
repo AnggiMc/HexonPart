@@ -37,7 +37,7 @@
                 </select>
             </div>
             <div class="overflow-x-auto">
-                <table class="min-w-full bg-white max-w-4xl mx-auto">
+                <table class="min-w-full bg-white">
                     <thead>
                         <tr>
                             <th class="py-2 px-4 border">ID</th>

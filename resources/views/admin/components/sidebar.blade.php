@@ -99,26 +99,11 @@
                     </li>
                 </ul>
             </li>
-            <li class="mb-2 relative dropdown">
-                <button class="flex items-center p-2 hover:bg-blue-700 rounded w-full" onclick="toggleDropdown(this)">
-                    <i class="fas fa-receipt mr-2"></i>
+            <li class="mb-2">
+                <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="/admin/order">
+                    <i class="fas fa-shopping-cart mr-2"></i>
                     Orders
-                    <i class="fas fa-caret-down ml-auto"></i>
-                </button>
-                <ul class="dropdown-menu bg-blue-800 text-white rounded shadow-lg mt-1">
-                    <li class="mb-1">
-                        <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="/admin/order">
-                            <i class="fas fa-shopping-cart mr-2"></i>
-                            Data Order
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="/admin/tambah-order">
-                            <i class="fas fa-plus-square mr-2"></i>
-                            Add Order
-                        </a>
-                    </li>
-                </ul>
+                </a>
             </li>
             <li class="mb-2">
                 <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="/admin/kupon">
