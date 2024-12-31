@@ -21,7 +21,9 @@
                 <h1 class="text-2xl font-bold">Selamat Datang di Panel Admin</h1>
                 <div class="flex space-x-4">
                     <i class="fas fa-moon text-2xl"></i>
-                    <i class="fas fa-bell text-2xl"></i>
+                    <a href="/admin/notifikasi">
+                        <i class="fas fa-bell text-2xl"></i>
+                    </a>
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-4 mb-8">

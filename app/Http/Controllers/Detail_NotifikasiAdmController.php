@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Edit_OrderController extends Controller
+class Detail_NotifikasiAdmController extends Controller
 {
     public function index()
     {
-        return view('admin.edit-order');
+        return view('admin.detail-notifikasi');
     }
 }

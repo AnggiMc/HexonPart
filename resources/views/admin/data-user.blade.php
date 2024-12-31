@@ -19,7 +19,9 @@
                 <h1 class="text-2xl font-bold text-center flex-1">DATA USERS</h1>
                 <div class="flex items-center space-x-4">
                     <i class="fas fa-moon text-xl"></i>
-                    <i class="fas fa-bell text-xl"></i>
+                    <a href="/admin/notifikasi">
+                        <i class="fas fa-bell text-2xl"></i>
+                    </a>
                 </div>
             </div>
             <div class="flex justify-between items-center mb-8">
