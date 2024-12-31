@@ -14,6 +14,8 @@ Route::get('/auth/Edit_Password', [Controllers\Edit_PasswordController::class, '
 Route::get('/user/Detail_Produk', [Controllers\Detail_ProdukController::class, 'index']);
 Route::get('/user/Order', [Controllers\OrderController::class, 'index']);
 Route::get('/user/Detail_Order', [Controllers\Detail_OrderController::class, 'index']);
+Route::get('/user/Pembayaran', [Controllers\PembayaranController::class, 'index']);
+Route::get('/user/Kategori_Produk', [Controllers\Kategori_ProdukController::class, 'index']);
 Route::get('/admin/dashboard', [Controllers\dashboardController::class, 'index']);
 Route::get('/admin/data-produk', [Controllers\Data_ProdukController::class, 'index']);
 Route::get('/admin/edit-data-produk', [Controllers\Edit_Data_ProdukController::class, 'index']);
