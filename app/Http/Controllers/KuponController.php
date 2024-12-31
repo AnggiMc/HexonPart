@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class dataOrderController extends Controller
+class KuponController extends Controller
 {
     public function index()
+
     {
-        return view('admin.data-order');
+        return view('admin.kupon');
     }
 }
