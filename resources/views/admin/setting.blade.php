@@ -15,6 +15,7 @@
         <!-- Main Content -->
         <div class="w-3/4 p-8">
             <div class="flex justify-between items-center mb-8">
+                <img alt="Hexon Parts Logo" class="h-12" height="50" src="{{ asset('img/HexonPart-Logo.png') }}" width="100"/>
                 <h1 class="text-2xl font-bold">PENGATURAN</h1>
                 <div class="flex space-x-4">
                     <i class="fas fa-moon text-xl"></i>
@@ -44,7 +45,7 @@
             </div>
             <div class="mb-8">
                 <h2 class="text-xl font-semibold mb-4">Banner
-                    <a href="/admin/edit-banner">
+                    <a href="/admin/banner">
                         <i class="fas fa-pen"></i>
                     </a>
                 </h2>
