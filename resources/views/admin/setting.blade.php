@@ -15,7 +15,9 @@
         <!-- Main Content -->
         <div class="w-3/4 p-8">
             <div class="flex justify-between items-center mb-8">
+
                 <img alt="Hexon Parts Logo" class="h-12" height="50" src="{{ asset('img/HexonPart-Logo.png') }}" width="100"/>
+
                 <h1 class="text-2xl font-bold">PENGATURAN</h1>
                 <div class="flex space-x-4">
                     <i class="fas fa-moon text-xl"></i>
@@ -34,9 +36,13 @@
             </div>
             <div class="mb-8">
                 <h2 class="text-xl font-semibold mb-4">Nama dan Logo Website
+
+                    <i class="fas fa-pen"></i>
+
                     <a href="/admin/edit-nama-logo">
                         <i class="fas fa-pen"></i>
                     </a>
+
                 </h2>
                 <div class="flex items-center space-x-4">
                     <img alt="HexonParts logo" class="w-24 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/AZiED4k15DqlMJFFM7CfpmrJFB2wIYtft8DegFduKMaLf09PB.jpg" width="100"/>
@@ -45,9 +51,13 @@
             </div>
             <div class="mb-8">
                 <h2 class="text-xl font-semibold mb-4">Banner
+
+                    <i class="fas fa-pen"></i>
+
                     <a href="/admin/banner">
                         <i class="fas fa-pen"></i>
                     </a>
+
                 </h2>
                 <div class="flex space-x-4">
                     <div class="w-1/2 h-32 bg-gray-200 flex items-center justify-center">
@@ -60,6 +70,16 @@
             </div>
             <div class="mb-8">
                 <h2 class="text-xl font-semibold mb-4">Footer
+
+                    <i class="fas fa-pen"></i>
+                </h2>
+                <div class="flex justify-between">
+                    <div class="flex space-x-4">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-linkedin"></i>
+
                     <a href="/admin/edit-footer">
                         <i class="fas fa-pen"></i>
                     </a>
@@ -78,6 +98,7 @@
                         <a href="http://id.linkedin.com">
                             <i class="fab fa-linkedin"></i>
                         </a>
+
                     </div>
                     <div class="flex space-x-8">
                         <div>

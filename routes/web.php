@@ -44,3 +44,4 @@ Route::get('/admin/banner', [Controllers\BannerController::class, 'index']);
 Route::get('/admin/tambah-banner', [Controllers\Tambah_BannerController::class, 'index']);
 Route::get('/admin/edit-banner', [Controllers\Edit_BannerController::class, 'index']);
 Route::get('/admin/edit-footer', [Controllers\Edit_FooterController::class, 'index']);
+

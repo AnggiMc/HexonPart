@@ -14,7 +14,7 @@
     </x-admin-sidebar>
    <!-- Main Content -->
    <div class="w-4/5 p-6">
-    <div class="flex justify-between items-center mb-6">
+    <div class="flex justify-between items-center 
         <img alt="Hexon Parts Logo" class="h-12" height="50" src="{{ asset('img/HexonPart-Logo.png') }}" width="100"/>
         <h1 class="text-2xl font-bold mx-auto">DATA PRODUK</h1>
         <div class="flex space-x-4">

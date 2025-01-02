@@ -16,6 +16,7 @@
         <!-- Main Content -->
         <div class="flex-1 p-8">
             <div class="flex justify-between items-center mb-8">
+
                 <img alt="Hexon Parts Logo" class="h-12" height="50" src="{{ asset('img/HexonPart-Logo.png') }}" width="100"/>
                 <h1 class="text-2xl font-bold text-center flex-1">DATA USERS</h1>
                 <div class="flex items-center space-x-4">
