@@ -111,110 +111,47 @@
     </div>
 
     <!-- Contact Us Section -->
-    <div class="max-w-full mx-auto p-4 bg-white shadow-md mt-32 text-center">
-        <h1 class="text-blue-600 text-xl font-bold">
-            Asian-Accessory.com
-        </h1>
-        <p>
-            JL. Prof. DR. Latumeten Raya No. 20 J-K Grogol Petamburan. Jakarta Barat. Prov. DKI Jakarta
-        </p>
-        <div class="flex justify-center items-center mt-2">
-            <i class="fas fa-map-marker-alt text-blue-600"></i>
-            <a class="text-blue-600 ml-2" href="#">
-                Lihat Google Maps
-            </a>
-        </div>
-        <div class="flex justify-center items-center mt-2">
-            <i class="fas fa-info-circle text-red-600"></i>
-            <p class="text-red-600 ml-2">
-                Tidak bisa pilih barang langsung di toko kami. Order dulu di website, bayar bisa cash di toko!
-            </p>
-        </div>
-        <p class="mt-2">
-            Telp. (021) 5641747
-        </p>
-        <p>
-            WhatsApp Admin:
-            <a class="text-blue-600" href="tel:081312225555">
-                08 131 222 5555
-            </a>
-        </p>
-        <p class="mt-2 font-bold">
-            Jam Operasional
-        </p>
-        <p>
-            Senin - Sabtu: 08.00 WIB - 17.00 WIB
-        </p>
-        <p>
-            Libur pada hari Minggu dan Tanggal Merah
-        </p>
-        <footer class="mmax-w-full mx-auto p-4 bg-white shadow text-center">
-            <div class="flex flex-col md:flex-row justify-center">
-                <div class="mb-4 md:mb-0">
-                    <p class="font-bold">
-                        Asian Accessory
-                    </p>
-                    <ul>
-                        <li>
-                            <a class="text-gray-700" href="#">
-                                Tentang Kami
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-700" href="#">
-                                Kontak Kami
-                            </a>
-                        </li>
-                        <li class="flex justify-center space-x-2 mt-2">
-                            <a class="text-gray-700" href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="text-gray-700" href="#">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a class="text-gray-700" href="#">
-                                <i class="fab fa-telegram"></i>
-                            </a>
-                        </li>
-                    </ul>
+    <footer class="bg-white py-8 border-t border-gray-200 mt-8">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <a href="#" class="text-black"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div>
-                    <p class="font-bold">
-                        Layanan Pelanggan
-                    </p>
-                    <ul>
-                        <li>
-                            <a class="text-gray-700" href="#">
-                                Cara Belanja
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-700" href="#">
-                                Biaya Pengiriman
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-700" href="#">
-                                Cara Pembayaran
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-700" href="#">
-                                Garansi Produk
-                            </a>
-                        </li>
-                    </ul>
+                <div class="flex space-x-16">
+                    <div>
+                        <h3 class="font-semibold mb-2">Use cases</h3>
+                        <ul>
+                            <li><a href="#" class="text-black">UI design</a></li>
+                            <li><a href="#" class="text-black">UX design</a></li>
+                            <li><a href="#" class="text-black">Wireframing</a></li>
+                            <li><a href="#" class="text-black">Diagramming</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Explore</h3>
+                        <ul>
+                            <li><a href="#" class="text-black">Design</a></li>
+                            <li><a href="#" class="text-black">Prototyping</a></li>
+                            <li><a href="#" class="text-black">Development features</a></li>
+                            <li><a href="#" class="text-black">Design systems</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Resources</h3>
+                        <ul>
+                            <li><a href="#" class="text-black">Blog</a></li>
+                            <li><a href="#" class="text-black">Best practices</a></li>
+                            <li><a href="#" class="text-black">Colors</a></li>
+                            <li><a href="#" class="text-black">Color wheel</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="text-center text-gray-600 mt-4">
-                <p>
-                    Last Update: 14 Dec 2024 15:52:59 © Asian-Accessory.com
-                </p>
-                <p>
-                    Copyright 2008 - 2024. All Rights Reserved
-                </p>
-            </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 
 
@@ -255,7 +192,7 @@
 
         // slide halaman
         const apiUrl = 'https://jsonplaceholder.typicode.com/photos';
-        const productsPerPage = 15; // Number of products per page
+        const productsPerPage = 20; // Number of products per page
         let currentPage = 1; // The current page
         let products = []; // Store products data
 

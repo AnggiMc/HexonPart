@@ -2,144 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Produk</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Order Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-50 font-sans">
-    <!-- Header -->
+<body class="bg-gray-100">
+    <!-- Header Section -->
     <header class="bg-white shadow-md sticky top-0 z-10">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800">HexonPart</a>
+            <a class="text-2xl font-bold text-gray-800" href="#">E-Shop</a>
             <div class="flex items-center space-x-4">
-                <input type="text" placeholder="Cari produk..."
-                    class="px-4 py-2 border rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <a href="#" class="text-gray-800 hover:text-blue-500">Kategori</a>
-                <a href="#" class="text-gray-800 hover:text-blue-500">Keranjang</a>
-                <a href="#" class="text-gray-800 hover:text-blue-500">Akun</a>
+                <input
+                    class="px-4 py-2 border rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden md:block"
+                    placeholder="Cari produk..." type="text" />
+                <div class="hidden md:flex items-center space-x-4">
+                    <a class="text-gray-800 hover:text-blue-500" href="#">Kategori</a>
+                    <a class="text-gray-800 hover:text-blue-500" href="#">Keranjang</a>
+                    <a class="text-gray-800 hover:text-blue-500" href="#">Akun</a>
+                </div>
+                <button id="menu-button"
+                    class="md:hidden flex items-center px-3 py-2 border rounded text-gray-800 border-gray-800 hover:text-blue-500 hover:border-blue-500">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
             </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 mt-4 w-full">
+            <a class="text-gray-800 hover:text-blue-500 border border-black w-full text-center py-2"
+                href="/user/Kategori_Produk">Kategori</a>
+            <a class="text-gray-800 hover:text-blue-500 border border-black w-full text-center py-2"
+                href="#">Keranjang</a>
+            <a class="text-gray-800 hover:text-blue-500 border border-black w-full text-center py-2"
+                href="/user/Profil">Akun</a>
         </div>
     </header>
 
+    <!-- Back Button -->
+    <div class="relative">
+        <div class="absolute top-0 left-0 p-4">
+            <a class="flex items-center text-lg" href="/user/Home">
+                <i class="fas fa-arrow-left text-2xl"></i>
+                <span class="ml-2 text-xl">Kembali</span>
+            </a>
+        </div>
+    </div>
+
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="max-w-4xl mx-auto p-4 pt-16">
+        <!-- Address Section -->
+        <div class="mb-4">
+            <label class="block text-gray-700" for="address">Alamat</label>
+            <input class="w-full border border-gray-300 p-2" id="address" type="text"
+                value="JL. Sitabudi Gegerkalong HJ. Rikho II" />
+            <button class="mt-2 bg-gray-200 text-gray-700 px-4 py-2">Ubah</button>
+        </div>
 
-            <!-- Product Images -->
-            <div>
-                <img src="https://via.placeholder.com/500" alt="Produk" class="w-full rounded-lg shadow-md">
-                <div class="flex space-x-2 mt-4">
-                    <img src="https://via.placeholder.com/100" alt="Produk" class="w-20 h-20 rounded-lg border">
-                    <img src="https://via.placeholder.com/100" alt="Produk" class="w-20 h-20 rounded-lg border">
-                    <img src="https://via.placeholder.com/100" alt="Produk" class="w-20 h-20 rounded-lg border">
+        <!-- Order Section -->
+        <div class="border border-gray-300 p-4 bg-white">
+            <h2 class="text-lg font-semibold mb-4">Produk Dipesan</h2>
+            <div class="grid grid-cols-12 gap-4 items-center border-b border-gray-300 pb-2 mb-2">
+                <div class="col-span-6">Nama Produk</div>
+                <div class="col-span-2 text-center">Harga Satuan</div>
+                <div class="col-span-2 text-center">Jumlah</div>
+                <div class="col-span-2 text-center">Subtotal Produk</div>
+            </div>
+
+            <!-- Order Item Example -->
+            <div class="grid grid-cols-12 gap-4 items-center border-b border-gray-300 pb-2 mb-2">
+                <div class="col-span-6 flex items-center">
+                    <img alt="Product Image" class="w-12 h-12 mr-4" height="50" src="https://via.placeholder.com/50"
+                        width="50" />
+                    <div>
+                        <div class="font-semibold">Nama Produk</div>
+                        <div class="text-gray-600 text-sm">Deskripsi singkat produk.</div>
+                    </div>
+                </div>
+                <div class="col-span-2 text-center">Rp 75.000</div>
+                <div class="col-span-2 text-center">1</div>
+                <div class="col-span-2 text-center">Rp 75.000</div>
+            </div>
+
+            <!-- Delivery and Payment Section -->
+            <div class="grid grid-cols-12 gap-4 items-center mt-4">
+                <div class="col-span-6">
+                    <div class="border border-gray-300 p-2">
+                        <div class="flex justify-between items-center">
+                            <div class="font-semibold">Oprasi Pengiriman</div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="text-gray-600 text-sm">
+                            JNE / SICEPAT<br />
+                            Barang Tiba: 25 - 30 Des
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6">
+                    <label class="block text-gray-700" for="payment-method">Metode Pembayaran</label>
+                    <select class="w-full border border-gray-300 p-2" id="payment-method">
+                        <option>Pilih metode pembayaran</option>
+                        <option>Transfer Bank</option>
+                        <option>COD</option>
+                    </select>
                 </div>
             </div>
 
-            <!-- Product Details -->
-            <div>
-                <h1 class="text-3xl font-bold text-gray-800">Nama Produk</h1>
-                <div class="flex items-center space-x-4 mt-2">
-                    <span class="text-yellow-500 text-xl">★★★★☆</span>
-                    <span class="text-gray-600">(120 Ulasan)</span>
+            <!-- Total Payment Section -->
+            <div class="flex justify-between items-center mt-4">
+                <div class="text-lg font-semibold">
+                    Total Pembayaran :
+                    <span class="text-orange-500">Rp75.000</span>
                 </div>
-                <div class="mt-4">
-                    <span class="text-2xl font-bold text-blue-500">Rp500.000</span>
-                    <span class="text-gray-500 line-through">Rp700.000</span>
-                    <span class="text-green-500">Diskon 30%</span>
-                </div>
-                <p class="mt-4 text-gray-600">
-                    Deskripsi singkat produk ini. Informasi utama tentang manfaat dan fitur unggulan.
-                </p>
-
-                <!-- Variants -->
-                <div class="mt-6">
-                    <h2 class="text-gray-800 font-semibold">Pilih Varian:</h2>
-                    <div class="flex space-x-2 mt-2">
-                        <button class="px-4 py-2 border rounded-lg hover:bg-blue-500 hover:text-white">Merah</button>
-                        <button class="px-4 py-2 border rounded-lg hover:bg-blue-500 hover:text-white">Hitam</button>
-                        <button class="px-4 py-2 border rounded-lg hover:bg-blue-500 hover:text-white">Putih</button>
-                    </div>
-                </div>
-
-                <!-- Quantity -->
-                <div class="mt-6">
-                    <h2 class="text-gray-800 font-semibold">Jumlah:</h2>
-                    <div class="flex items-center mt-2">
-                        <button class="px-4 py-2 bg-gray-200 rounded-lg">-</button>
-                        <input type="text" value="1" class="w-12 text-center border rounded-lg mx-2">
-                        <button class="px-4 py-2 bg-gray-200 rounded-lg">+</button>
-                    </div>
-                </div>
-
-                <!-- Buttons -->
-                <div class="mt-6 flex space-x-4">
-                    <button class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Tambah ke
-                        Keranjang</button>
-                    <button class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600">Beli
-                        Sekarang</button>
-                </div>
+                <a href="/user/Pembayaran" class="bg-gray-500 text-white px-4 py-2 rounded-lg inline-block text-center">
+                    Buat Pesanan
+                </a>
             </div>
         </div>
+    </div>
 
-        <!-- Product Description -->
-        <div class="mt-12">
-            <h2 class="text-2xl font-bold text-gray-800">Deskripsi Produk</h2>
-            <p class="mt-4 text-gray-600">
-                Ini adalah deskripsi lengkap tentang produk ini. Anda dapat menambahkan informasi lebih rinci tentang
-                spesifikasi teknis, cara penggunaan, dan fitur unik produk ini.
-            </p>
-        </div>
-
-        <!-- Reviews -->
-        <div class="mt-12">
-            <h2 class="text-2xl font-bold text-gray-800">Ulasan</h2>
-            <div class="mt-4 space-y-4">
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex items-center justify-between">
-                        <h3 class="font-semibold">Nama Pembeli</h3>
-                        <span class="text-yellow-500">★★★★☆</span>
-                    </div>
-                    <p class="text-gray-600 mt-2">Produk ini sangat bagus dan sesuai dengan deskripsi.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex items-center justify-between">
-                        <h3 class="font-semibold">Nama Pembeli</h3>
-                        <span class="text-yellow-500">★★★★★</span>
-                    </div>
-                    <p class="text-gray-600 mt-2">Sangat puas dengan pembelian ini.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="font-bold">Tentang Kami</h3>
-                    <p class="text-gray-400 mt-2">Kami adalah toko online terpercaya yang menyediakan berbagai produk
-                        berkualitas.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold">Bantuan</h3>
-                    <ul class="mt-2 space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Kontak Kami</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold">Ikuti Kami</h3>
-                    <div class="flex space-x-4 mt-2">
-                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
-                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Script -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
