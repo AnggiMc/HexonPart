@@ -163,7 +163,7 @@
                 <button class="bg-orange-500 text-white px-4 py-2 rounded">
                     <div>
                         <a href="/user/Detail_Order" class="text-gray-800 hover:text-blue-500 flex items-center">
-                            Checkout
+                            Checkout Now
                         </a>
                     </div>
                 </button>
