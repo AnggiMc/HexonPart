@@ -18,7 +18,9 @@
                 <h1 class="text-2xl font-bold">PENGATURAN</h1>
                 <div class="flex space-x-4">
                     <i class="fas fa-moon text-xl"></i>
-                    <i class="fas fa-bell text-xl"></i>
+                    <a href="/admin/notifikasi">
+                        <i class="fas fa-bell text-2xl"></i>
+                    </a>
                 </div>
             </div>
             <div class="bg-gray-100 p-4 rounded-lg mb-8">

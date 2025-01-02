@@ -38,3 +38,5 @@ Route::get('/admin/tambah-payment', [Controllers\Tambah_PaymentController::class
 Route::get('/admin/edit-payment', [Controllers\Edit_PaymentController::class, 'index']);
 Route::get('/admin/kupon', [Controllers\KuponController::class, 'index']);
 Route::get('/admin/setting', [Controllers\SettingController::class, 'index']);
+Route::get('/admin/notifikasi', [Controllers\Admin_NotifikasiController::class, 'index']);
+Route::get('/admin/detail-notifikasi', [Controllers\Detail_NotifikasiAdmController::class, 'index']);
