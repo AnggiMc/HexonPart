@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers;
 
-
 Route::get('/', [Controllers\WelcomeController::class, 'index']);
 Route::get('/user/Home', [Controllers\HomeController::class, 'index']);
 Route::get('/auth/Login', [Controllers\LoginController::class, 'index']);
@@ -40,3 +39,8 @@ Route::get('/admin/kupon', [Controllers\KuponController::class, 'index']);
 Route::get('/admin/setting', [Controllers\SettingController::class, 'index']);
 Route::get('/admin/notifikasi', [Controllers\Admin_NotifikasiController::class, 'index']);
 Route::get('/admin/detail-notifikasi', [Controllers\Detail_NotifikasiAdmController::class, 'index']);
+Route::get('/admin/edit-nama-logo', [Controllers\Edit_Nama_LogoController::class, 'index']);
+Route::get('/admin/banner', [Controllers\BannerController::class, 'index']);
+Route::get('/admin/tambah-banner', [Controllers\Tambah_BannerController::class, 'index']);
+Route::get('/admin/edit-banner', [Controllers\Edit_BannerController::class, 'index']);
+Route::get('/admin/edit-footer', [Controllers\Edit_FooterController::class, 'index']);

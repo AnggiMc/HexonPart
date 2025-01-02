@@ -145,7 +145,7 @@
                 </a>
             </li>
             <li>
-                <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="/auth/login">
+                <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="/auth/Login">
                     <i class="fas fa-sign-out-alt mr-2"></i>
                     Logout
                 </a>
