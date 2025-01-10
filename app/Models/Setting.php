@@ -4,19 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class Setting extends Model
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * Nama tabel yang terkait dengan model.
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'settings';
 
     /**
      * Kunci utama tabel.
@@ -45,15 +43,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'phone',
-        'gender',
-        'password',
-        'role',
-        'status',
-        'email_verified_at',
-        'verification_token',
+        'key',
+        'value',
     ];
 
     /**
@@ -61,10 +52,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = [];
 
     /**
      * Kolom yang harus di-cast ke tipe data tertentu.
@@ -72,18 +60,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
-
-    /**
-     * Relasi ke model lain (opsional).
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    // public function profile()
-    // {
-    //     return $this->hasOne(Profile::class);
-    // }
 }

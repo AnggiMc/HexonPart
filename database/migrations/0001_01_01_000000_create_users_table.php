@@ -15,8 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('phone')->nullable();
+            $table->enum('gender', ['male', 'female', 'other'])->nullable();
+            $table->string('password'); // Password bisa null untuk pengguna yang login dengan Google
+            $table->enum('role', ['super-admin', 'manager', 'customer-service', 'customer'])->default('customer');
+            $table->enum('status', ['verify', 'active', 'banned']);
+            $table->timestamp('email_verified_at')->nullable(); // Kolom untuk menyimpan waktu verifikasi email
+            $table->string('verification_token')->nullable(); // Token verifikasi email
             $table->rememberToken();
             $table->timestamps();
         });

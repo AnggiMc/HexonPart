@@ -4,19 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class Coupon extends Model
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * Nama tabel yang terkait dengan model.
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'coupons';
 
     /**
      * Kunci utama tabel.
@@ -45,15 +43,14 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'phone',
-        'gender',
-        'password',
-        'role',
+        'code',
+        'discount_amount',
+        'discount_percentage',
+        'start_date',
+        'end_date',
+        'usage_limit',
+        'used_count',
         'status',
-        'email_verified_at',
-        'verification_token',
     ];
 
     /**
@@ -61,10 +58,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = [];
 
     /**
      * Kolom yang harus di-cast ke tipe data tertentu.
@@ -72,18 +66,20 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'discount_amount' => 'decimal:2',
+        'start_date' => 'date',
+        'end_date' => 'date',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
 
     /**
-     * Relasi ke model lain (opsional).
+     * Relasi ke model Order (opsional).
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    // public function profile()
+    // public function orders()
     // {
-    //     return $this->hasOne(Profile::class);
+    //     return $this->hasMany(Order::class, 'coupon_id', 'id');
     // }
 }

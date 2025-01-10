@@ -4,19 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class Product extends Model
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * Nama tabel yang terkait dengan model.
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'products';
 
     /**
      * Kunci utama tabel.
@@ -46,14 +44,14 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'email',
-        'phone',
-        'gender',
-        'password',
-        'role',
+        'description',
+        'price',
+        'stock',
+        'sku',
+        'image',
         'status',
-        'email_verified_at',
-        'verification_token',
+        'brand_id',
+        'category_id',
     ];
 
     /**
@@ -61,10 +59,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = [];
 
     /**
      * Kolom yang harus di-cast ke tipe data tertentu.
@@ -72,18 +67,28 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'price' => 'decimal:2',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
 
     /**
-     * Relasi ke model lain (opsional).
+     * Relasi ke model Brand.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    // public function profile()
-    // {
-    //     return $this->hasOne(Profile::class);
-    // }
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class, 'brand_id', 'id');
+    }
+
+    /**
+     * Relasi ke model Category.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id', 'id');
+    }
 }

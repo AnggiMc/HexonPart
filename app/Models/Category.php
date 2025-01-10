@@ -4,19 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class Category extends Model
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * Nama tabel yang terkait dengan model.
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'categories';
 
     /**
      * Kunci utama tabel.
@@ -46,14 +44,8 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'email',
-        'phone',
-        'gender',
-        'password',
-        'role',
+        'description',
         'status',
-        'email_verified_at',
-        'verification_token',
     ];
 
     /**
@@ -61,10 +53,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = [];
 
     /**
      * Kolom yang harus di-cast ke tipe data tertentu.
@@ -72,18 +61,17 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
 
     /**
-     * Relasi ke model lain (opsional).
+     * Relasi ke model Product.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    // public function profile()
-    // {
-    //     return $this->hasOne(Profile::class);
-    // }
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'category_id', 'id');
+    }
 }

@@ -4,19 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class Payment extends Model
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * Nama tabel yang terkait dengan model.
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'payments';
 
     /**
      * Kunci utama tabel.
@@ -45,15 +43,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'phone',
-        'gender',
-        'password',
-        'role',
+        'order_id',
+        'amount',
+        'payment_method',
         'status',
-        'email_verified_at',
-        'verification_token',
+        'transaction_id',
     ];
 
     /**
@@ -61,10 +55,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = [];
 
     /**
      * Kolom yang harus di-cast ke tipe data tertentu.
@@ -72,18 +63,18 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'amount' => 'decimal:2',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
 
     /**
-     * Relasi ke model lain (opsional).
+     * Relasi ke model Order.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    // public function profile()
-    // {
-    //     return $this->hasOne(Profile::class);
-    // }
+    public function order()
+    {
+        return $this->belongsTo(Order::class, 'order_id', 'id');
+    }
 }
