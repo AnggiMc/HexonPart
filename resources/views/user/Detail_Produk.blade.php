@@ -26,31 +26,8 @@
 
 <body class="bg-gray-50 font-sans">
     <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-10">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800">E-Shop</a>
-            <div class="flex items-center space-x-4">
-                <input type="text" placeholder="Cari produk..." class="px-4 py-2 border rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden md:block">
-                <div class="menu hidden md:flex items-center space-x-4">
-                    <a href="#" class="text-gray-800 hover:text-blue-500">Kategori</a>
-                    <a href="#" class="text-gray-800 hover:text-blue-500">Keranjang</a>
-                    <a href="#" class="text-gray-800 hover:text-blue-500">Akun</a>
-                </div>
-                <button class="hamburger md:hidden flex items-center px-3 py-2 border rounded text-gray-800 border-gray-800 hover:text-blue-500 hover:border-blue-500">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="mobile-menu md:hidden hidden">
-            <input type="text" placeholder="Cari produk..." class="px-4 py-2 border rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
-            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Kategori</a>
-            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Keranjang</a>
-            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Akun</a>
-        </div>
-    </header>
+    <x-user-header>
+    </x-user-header>
 
     <!-- Back Button -->
     <div class="container mx-auto px-4 py-4">
@@ -150,47 +127,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white py-8 border-t border-gray-200 mt-8">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-4">
-                    <a href="#" class="text-black"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-black"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="flex space-x-16">
-                    <div>
-                        <h3 class="font-semibold mb-2">Use cases</h3>
-                        <ul>
-                            <li><a href="#" class="text-black">UI design</a></li>
-                            <li><a href="#" class="text-black">UX design</a></li>
-                            <li><a href="#" class="text-black">Wireframing</a></li>
-                            <li><a href="#" class="text-black">Diagramming</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold mb-2">Explore</h3>
-                        <ul>
-                            <li><a href="#" class="text-black">Design</a></li>
-                            <li><a href="#" class="text-black">Prototyping</a></li>
-                            <li><a href="#" class="text-black">Development features</a></li>
-                            <li><a href="#" class="text-black">Design systems</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold mb-2">Resources</h3>
-                        <ul>
-                            <li><a href="#" class="text-black">Blog</a></li>
-                            <li><a href="#" class="text-black">Best practices</a></li>
-                            <li><a href="#" class="text-black">Colors</a></li>
-                            <li><a href="#" class="text-black">Color wheel</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <x-user-footer>
+    </x-user-footer>
 
     <script>
         // Hamburger menu toggle

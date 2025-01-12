@@ -9,35 +9,8 @@
 </head>
 
 <body class="bg-white text-black">
-    <header class="p-4 border-b border-gray-300">
-        <div class="flex items-center justify-between">
-            <img alt="Hexon Parts logo" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/Yprl59Y7c5o7Ph6WVC2ehOYrbeK0hLA0pcuHXIUfXWKzbkePB.jpg" width="100" />
-            <div class="flex items-center w-1/2">
-                <input class="w-full p-2 border border-black rounded-l-md" placeholder="cari barang" type="text" />
-                <button class="p-2 border border-black rounded-r-md bg-white">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-            <nav class="hidden md:flex items-center space-x-4">
-                <a class="text-lg" href="/user/Home">Home</a>
-                <a class="text-lg" href="#">Kategori</a>
-                <a class="text-lg" href="/user/Order">Keranjang</a>
-                <a class="text-lg" href="#"><i class="fas fa-user"></i></a>
-            </nav>
-            <button id="menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-gray-800 border-gray-800 hover:text-blue-500 hover:border-blue-500">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 mt-4 w-full">
-            <a class="text-gray-800 hover:text-blue-500 border border-black w-full text-center py-2" href="/user/Home">Home</a>
-            <a class="text-gray-800 hover:text-blue-500 border border-black w-full text-center py-2" href="#">Kategori</a>
-            <a class="text-gray-800 hover:text-blue-500 border border-black w-full text-center py-2" href="/user/Order">Keranjang</a>
-            <a class="text-gray-800 hover:text-blue-500 border border-black w-full text-center py-2" href="#"><i class="fas fa-user"></i></a>
-        </div>
-    </header>
+    <x-user-header>
+    </x-user-header>
     <div class="p-4">
         <a class="text-xl" href="/user/Home"><i class="fas fa-arrow-left"></i> Kembali</a>
     </div>
